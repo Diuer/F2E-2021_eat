@@ -10,10 +10,13 @@ import "./style.scss";
 const App = () => {
 
   return (
-    <Router>
-      <Switch>
-      </Switch>
-    </Router>
+    <>
+      <p>Diuer Test</p>
+      <Router>
+        <Switch>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
