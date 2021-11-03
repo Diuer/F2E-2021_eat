@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "[hash:8].[name].js",
-    publicPath: "/assets/frontend",
+    publicPath: "",
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
