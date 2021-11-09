@@ -1,4 +1,5 @@
 import jsSHA from "jssha";
+import qs from "querystring";
 
 const apiRoot = "https://ptx.transportdata.tw/MOTC/";
 const VERSION = "/v2";
@@ -21,7 +22,7 @@ const getAuthorizationHeader = () => {
 };
 
 const requestAPI = (path = "", param = {}) => {
-  return fetch(`${apiRoot}${VERSION}${path}?`, {
+  return fetch(`${apiRoot}${VERSION}${path}?${qs.stringify(param)}`, {
     method: "GET",
     headers: getAuthorizationHeader(),
   })
@@ -38,11 +39,11 @@ const requestAPI = (path = "", param = {}) => {
 
 export default requestAPI;
 
-export const requestScenicSpot = (city, param) => {
-  const scenicSportPath = "/Tourism/ScenicSpot";
+export const requesRestaurant = (city, param) => {
+  const restaurantPath = "/Tourism/Restaurant";
 
   if (!city) {
-    return requestAPI(scenicSportPath, param);
+    return requestAPI(restaurantPath, param);
   }
-  return requestAPI(`${scenicSportPath}/${city}`, param);
+  return requestAPI(`${restaurantPath}/${city}`, param);
 };

@@ -5,12 +5,14 @@ import NotListedLocationIcon from "@mui/icons-material/NotListedLocation";
 import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 
 import "./HeaderSearch.scss";
-import requestAPI, { requestScenicSpot } from "../../controller/apiManager";
+import requestAPI, { requesRestaurant } from "../../controller/apiManager";
 
 const HeaderSearch = () => {
-  
   useEffect(async () => {
-    const data = await requestScenicSpot("Taipei");
+    const data = await requesRestaurant("Taipei", {
+      $top: 8,
+      $filter: "contains(Address, '中正區')",
+    });
     console.log(data);
   }, []);
 
