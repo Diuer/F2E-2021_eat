@@ -6021,10 +6021,10 @@ sass-graph@2.2.5:
     scss-tokenizer "^0.2.3"
     yargs "^13.3.2"
 
-sass-loader@^1.2.1:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-2.0.0.tgz#8a973ff6ba8fcb405a7e0b59e13f5a42c36dc626"
-  integrity sha1-ipc/9rqPy0BafgtZ4T9aQsNtxiY=
+sass-loader@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-2.0.1.tgz#82d8e05c48a54ac3de7d3acda521708d13f58d8f"
+  integrity sha1-gtjgXEilSsPefTrNpSFwjRP1jY8=
   dependencies:
     async "^1.4.0"
     loader-utils "^0.2.5"
