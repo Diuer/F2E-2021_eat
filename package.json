@@ -1,9 +1,9 @@
 {
   "name": "F2E-2021_trip",
-  "homepage": "https://diuer.github.io/F2E-2021_trip/",
+  "homepage": "https://diuer.github.io/F2E-2021_eat/",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Diuer/F2E-2021_trip.git",
+  "repository": "https://github.com/Diuer/F2E-2021_eat.git",
   "author": "Diuer",
   "license": "MIT",
   "dependencies": {
