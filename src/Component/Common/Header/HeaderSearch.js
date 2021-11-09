@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import SearchIcon from "@mui/icons-material/Search";
 import NotListedLocationIcon from "@mui/icons-material/NotListedLocation";
 import AccessTimeFilledIcon from "@mui/icons-material/AccessTimeFilled";
 
 import "./HeaderSearch.scss";
+import requestAPI, { requestScenicSpot } from "../../controller/apiManager";
 
 const HeaderSearch = () => {
+  
+  useEffect(async () => {
+    const data = await requestScenicSpot("Taipei");
+    console.log(data);
+  }, []);
+
   return (
     <div className="header-search">
       <div className="inner-container">
